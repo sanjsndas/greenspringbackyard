@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenSpring Backyard — Outdoor Living, Naturally Inspired</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Warm Sand Beige */
+            color: #757575; /* Earth Stone Gray for text */
+        }
+        .text-green-spring {
+            color: #66BB6A; /* Fresh Grass Green */
+        }
+        .bg-green-spring {
+            background-color: #66BB6A; /* Fresh Grass Green */
+        }
+        .text-blue-sky {
+            color: #4FC3F7; /* Spring Sky Blue */
+        }
+        .bg-blue-sky {
+            background-color: #4FC3F7; /* Spring Sky Blue */
+        }
+        .text-earth-stone {
+            color: #757575; /* Earth Stone Gray */
+        }
+        .bg-earth-stone {
+            background-color: #757575; /* Earth Stone Gray */
+        }
+        .bg-warm-sand {
+            background-color: #FFF8E1; /* Warm Sand Beige */
+        }
+        .bg-natural-wood {
+            background-color: #8D6E63; /* Natural Wood Brown */
+        }
+        .border-natural-wood {
+            border-color: #8D6E63; /* Natural Wood Brown */
+        }
+        .btn-primary {
+            @apply bg-green-spring text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-transparent border border-green-spring text-green-spring font-semibold py-3 px-6 rounded-lg hover:bg-green-spring hover:text-white transition duration-300 ease-in-out;
+        }
+        .section-heading {
+            @apply text-4xl font-bold text-earth-stone mb-8 text-center;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF8E1; /* Warm Sand Beige */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #66BB6A; /* Fresh Grass Green */
+            border-radius: 10px;
+            border: 3px solid #FFF8E1; /* Warm Sand Beige */
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4CAF50; /* Slightly darker green on hover */
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+    <!-- Header -->
+    <header class="bg-warm-sand shadow-lg py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <a href="#" class="text-3xl font-bold text-green-spring flex items-center">
+                    <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    GreenSpring Backyard
+                </a>
+            </div>
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-8 text-lg font-medium">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 md:mt-0 flex space-x-4">
+                <a href="#design-quote" class="btn-primary">Get a Design Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center text-center overflow-hidden rounded-b-xl">
+        <img src="p2.avif" alt="Beautifully designed backyard with greenery and seating" class="absolute inset-0 w-full h-full object-cover filter brightness-75">
+        <div class="relative z-10 p-6 md:p-12 bg-black bg-opacity-40 rounded-xl max-w-4xl mx-auto">
+            <h1 class="text-5xl md:text-7xl font-extrabold text-white mb-6 leading-tight drop-shadow-lg">
+                Outdoor Living, <br class="md:hidden">Naturally Inspired.
+            </h1>
+            <p class="text-xl md:text-2xl text-white mb-8 drop-shadow-md">
+                GreenSpring Backyard turns ordinary outdoor spaces into lush, functional, beautiful environments.
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6">
+                <a href="#design-inspirations" class="btn-primary">See Backyard Ideas</a>
+                <a href="#design-quote" class="btn-secondary text-white border-white hover:bg-white hover:text-green-spring">Get a Design Quote</a>
+                <a href="#shop-essentials" class="btn-secondary text-white border-white hover:bg-white hover:text-green-spring">Shop Eco-Friendly Upgrades</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Brand Essence & Identity Snapshot -->
+    <section class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading">Our Brand Essence</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-green-spring">
+                    <h3 class="text-2xl font-semibold text-green-spring mb-4">Vision & Mission</h3>
+                    <p class="text-earth-stone leading-relaxed">
+                        GreenSpring Backyard is dedicated to transforming outdoor spaces into vibrant, functional, and aesthetically pleasing extensions of your home. We believe every backyard, no matter its size, holds the potential for comfort, sustainability, and beauty. Our mission is to blend lush greenery with smart, modern design, creating environments that enhance lifestyles and connect people with nature. We focus on delivering innovative, eco-friendly solutions tailored to the unique needs of homeowners, families, entertainers, and urban dwellers, ensuring every project reflects our commitment to natural aesthetics and sustainable practices.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-sky">
+                    <h3 class="text-2xl font-semibold text-blue-sky mb-4">Core Values</h3>
+                    <ul class="list-disc list-inside text-earth-stone space-y-2 leading-relaxed">
+                        <li><strong>Sustainability:</strong> Prioritizing eco-friendly materials, water-saving techniques, and native plant selections to minimize environmental impact.</li>
+                        <li><strong>Innovation:</strong> Continuously exploring new design trends, smart technologies, and sustainable practices to offer cutting-edge solutions.</li>
+                        <li><strong>Customer-Centricity:</strong> Listening intently to our clients' visions and needs, ensuring personalized designs that exceed expectations.</li>
+                        <li><strong>Quality Craftsmanship:</strong> Delivering durable, beautiful, and long-lasting outdoor spaces built with meticulous attention to detail.</li>
+                        <li><strong>Natural Harmony:</strong> Emphasizing designs that seamlessly integrate with the surrounding environment, promoting biodiversity and tranquility.</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-natural-wood">
+                    <h3 class="text-2xl font-semibold text-natural-wood mb-4">Brand Identity Snapshot</h3>
+                    <div class="space-y-4 text-earth-stone">
+                        <p><strong>Brand Name:</strong> GreenSpring Backyard</p>
+                        <p><strong>Taglines:</strong> "Outdoor Living, Naturally Inspired." | "Where Your Backyard Comes to Life." | "Greener Spaces. Smarter Design."</p>
+                        <p><strong>Tone:</strong> Fresh, modern, approachable, eco-conscious.</p>
+                        <p><strong>Audience:</strong> Homeowners, garden enthusiasts, families, outdoor entertainers, urban homeowners seeking to enhance their outdoor living experience.</p>
+                        <p><strong>Visuals:</strong> Lush, modern backyards with greenery, seating, fire pits, patios, pergolas, garden pathways. Imagery of families and friends enjoying their spaces.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 text-center">
+                <h3 class="text-3xl font-semibold text-earth-stone mb-6">Our Color Palette</h3>
+                <div class="flex flex-wrap justify-center gap-6">
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-green-spring shadow-lg border border-gray-300"></div>
+                        <p class="mt-2 text-sm font-medium text-earth-stone">Fresh Grass Green (#66BB6A)</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-blue-sky shadow-lg border border-gray-300"></div>
+                        <p class="mt-2 text-sm font-medium text-earth-stone">Spring Sky Blue (#4FC3F7)</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-earth-stone shadow-lg border border-gray-300"></div>
+                        <p class="mt-2 text-sm font-medium text-earth-stone">Earth Stone Gray (#757575)</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-warm-sand shadow-lg border border-gray-300"></div>
+                        <p class="mt-2 text-sm font-medium text-earth-stone">Warm Sand Beige (#FFF8E1)</p>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <div class="w-24 h-24 rounded-full bg-natural-wood shadow-lg border border-gray-300"></div>
+                        <p class="mt-2 text-sm font-medium text-earth-stone">Natural Wood Brown (#8D6E63)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Inspirations -->
+    <section id="design-inspirations" class="py-16 bg-blue-sky bg-opacity-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading text-blue-sky">Design Inspirations</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                Explore a diverse collection of backyard transformations, from compact urban havens to expansive family retreats. Discover how GreenSpring Backyard can bring your vision to life.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Urban Small Space Makeovers -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-sky">
+                    <img src="p1.avif" alt="Urban small space makeover" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-sky mb-3">Urban Small Space Makeovers</h3>
+                        <p class="text-earth-stone mb-4">
+                            Maximize every square inch of your city dwelling's outdoor area. We specialize in creating functional and beautiful spaces for balconies, rooftop gardens, and compact patios. Think vertical gardens, clever built-in seating, and multi-functional furniture that transforms with your needs. Learn how to turn a tiny patch into a vibrant, private retreat.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-earth-stone mb-4 space-y-1">
+                            <li>Space-saving vertical gardens</li>
+                            <li>Integrated seating and storage solutions</li>
+                            <li>Smart lighting for evening ambiance</li>
+                            <li>Drought-tolerant plant selections</li>
+                        </ul>
+                        <a href="#" class="text-green-spring hover:underline font-medium">View Urban Projects &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Family-Friendly Backyard Zones -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-green-spring">
+                    <img src="p3.webp" alt="Family-friendly backyard zone" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-spring mb-3">Family-Friendly Backyard Zones</h3>
+                        <p class="text-earth-stone mb-4">
+                            Design a backyard that caters to every family member, from playful kids to relaxing adults. We create safe, engaging, and durable spaces with dedicated play areas, cozy gathering spots, and low-maintenance landscaping. Discover ideas for natural playgrounds, splash pads, and resilient planting that can withstand active use.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-earth-stone mb-4 space-y-1">
+                            <li>Safe, natural play areas</li>
+                            <li>Durable, low-maintenance landscaping</li>
+                            <li>Outdoor dining and relaxation zones</li>
+                            <li>Pet-friendly design considerations</li>
+                        </ul>
+                        <a href="#" class="text-blue-sky hover:underline font-medium">Explore Family Designs &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Garden Nooks and Relaxation Corners -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-natural-wood">
+                    <img src="p4.avif" alt="Garden nook and relaxation corner" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-natural-wood mb-3">Garden Nooks & Relaxation Corners</h3>
+                        <p class="text-earth-stone mb-4">
+                            Create your personal sanctuary amidst nature. From serene meditation gardens to cozy reading nooks, we design spaces that invite tranquility and contemplation. Incorporate calming water features, fragrant plants, and comfortable seating to craft a perfect escape from the everyday hustle.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-earth-stone mb-4 space-y-1">
+                            <li>Zen gardens and meditation spaces</li>
+                            <li>Cozy reading nooks with natural shade</li>
+                            <li>Soothing water features</li>
+                            <li>Fragrant and low-maintenance planting</li>
+                        </ul>
+                        <a href="#" class="text-green-spring hover:underline font-medium">Discover Tranquil Spaces &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Entertaining Spaces with Outdoor Kitchens or Lounges -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-earth-stone">
+                    <img src="p5.avif" alt="Outdoor kitchen and lounge" class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-earth-stone mb-3">Entertaining Spaces</h3>
+                        <p class="text-earth-stone mb-4">
+                            Host unforgettable gatherings with a backyard designed for entertaining. From fully equipped outdoor kitchens to comfortable lounge areas with fire pits, we create seamless transitions between indoor and outdoor living. Explore concepts for dining al fresco, cocktail bars, and integrated sound systems for the ultimate party spot.
+                        </p>
+                        <ul class="list-disc list-inside text-sm text-earth-stone mb-4 space-y-1">
+                            <li>Fully equipped outdoor kitchens</li>
+                            <li>Spacious dining and lounge areas</li>
+                            <li>Integrated fire pits and heating solutions</li>
+                            <li>Ambiance lighting and sound systems</li>
+                        </ul>
+                        <a href="#" class="text-green-spring hover:underline font-medium">See Entertaining Designs &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Services -->
+    <section id="our-services" class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading">Our Services</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                GreenSpring Backyard offers a comprehensive suite of services to bring your outdoor dreams to reality, always with an emphasis on sustainability and aesthetic harmony.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Full Backyard Design Consultations -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-green-spring">
+                    <h3 class="text-2xl font-semibold text-green-spring mb-4">Full Backyard Design Consultations</h3>
+                    <p class="text-earth-stone leading-relaxed mb-4">
+                        Our expert designers work closely with you from concept to completion. We begin with an in-depth consultation to understand your vision, lifestyle, and budget. This includes site analysis, conceptual sketches, 3D renderings, and detailed master plans. We ensure every element, from plant selection to hardscaping, aligns with your aesthetic preferences and functional needs. Our goal is to create a cohesive, beautiful, and sustainable outdoor space that truly reflects you.
+                    </p>
+                    <a href="#virtual-consultation-booking" class="text-blue-sky hover:underline font-medium">Book a Consultation &rarr;</a>
+                </div>
+
+                <!-- Eco-Friendly Landscaping Solutions -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-sky">
+                    <h3 class="text-2xl font-semibold text-blue-sky mb-4">Eco-Friendly Landscaping Solutions</h3>
+                    <p class="text-earth-stone leading-relaxed mb-4">
+                        Embrace nature with our sustainable landscaping practices. We specialize in native plant selection, drought-tolerant gardens, organic soil enrichment, and permaculture design. Our solutions reduce water consumption, attract local wildlife, and require minimal maintenance, all while creating stunning natural beauty. Let us help you cultivate a thriving, eco-conscious landscape.
+                    </p>
+                    <a href="#" class="text-green-spring hover:underline font-medium">Learn About Eco-Landscaping &rarr;</a>
+                </div>
+
+                <!-- Patio, Deck, Pergola, and Outdoor Structure Installations -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-natural-wood">
+                    <h3 class="text-2xl font-semibold text-natural-wood mb-4">Outdoor Structure Installations</h3>
+                    <p class="text-earth-stone leading-relaxed mb-4">
+                        Enhance your outdoor living with durable and stylish structures. We design and install custom patios, decks, pergolas, gazebos, and outdoor kitchens using high-quality, sustainable materials. Whether you envision a cozy covered lounge or an expansive entertainment area, our craftsmanship ensures a seamless integration with your landscape and long-lasting enjoyment.
+                    </p>
+                    <a href="#" class="text-blue-sky hover:underline font-medium">View Structure Options &rarr;</a>
+                </div>
+
+                <!-- Smart Water-Saving Garden Features -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-earth-stone">
+                    <h3 class="text-2xl font-semibold text-earth-stone mb-4">Smart Water-Saving Features</h3>
+                    <p class="text-earth-stone leading-relaxed mb-4">
+                        Conserve water and maintain a vibrant garden with our innovative water-saving solutions. We install efficient irrigation systems, rainwater harvesting setups, and greywater recycling systems. Our designs also incorporate permeable paving and strategic plant choices to reduce runoff and maximize water retention, contributing to a greener planet and lower utility bills.
+                    </p>
+                    <a href="#" class="text-green-spring hover:underline font-medium">Discover Water Solutions &rarr;</a>
+                </div>
+
+                <!-- Custom Garden Lighting -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-green-spring">
+                    <h3 class="text-2xl font-semibold text-green-spring mb-4">Custom Garden Lighting</h3>
+                    <p class="text-earth-stone leading-relaxed mb-4">
+                        Extend the enjoyment of your backyard well into the evening with our custom lighting designs. We install energy-efficient LED lighting systems that highlight architectural features, illuminate pathways for safety, and create stunning ambiance. From subtle accent lighting to dramatic focal points, our solutions enhance beauty and functionality after dark.
+                    </p>
+                    <a href="#" class="text-blue-sky hover:underline font-medium">Explore Lighting Options &rarr;</a>
+                </div>
+
+                <!-- Outdoor Furniture & Decor Integration -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-sky">
+                    <h3 class="text-2xl font-semibold text-blue-sky mb-4">Outdoor Furniture & Decor</h3>
+                    <p class="text-earth-stone leading-relaxed mb-4">
+                        Complete your outdoor space with carefully selected furniture and decor that complements your design. We help you choose durable, weather-resistant pieces that are both stylish and comfortable. From dining sets and lounge chairs to decorative planters and outdoor rugs, we ensure every detail contributes to a cohesive and inviting environment.
+                    </p>
+                    <a href="#" class="text-green-spring hover:underline font-medium">Browse Decor Ideas &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Shop GreenSpring Essentials -->
+    <section id="shop-essentials" class="py-16 bg-blue-sky bg-opacity-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading text-blue-sky">Shop GreenSpring Essentials</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                Curated for quality, sustainability, and style, our collection of backyard essentials helps you maintain and enhance your outdoor space with ease.
+            </p>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8">
+                <!-- Eco-planters and Vertical Garden Kits -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-green-spring">
+                    <img src="p6.avif" alt="Eco-planters and vertical garden kits" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-spring mb-2">Eco-Planters & Vertical Garden Kits</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Discover our range of sustainable planters made from recycled materials and innovative vertical garden systems perfect for small spaces. Grow herbs, flowers, or vegetables efficiently and beautifully.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$49.99</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Outdoor Seating -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-natural-wood">
+                    <img src="p7.webp" alt="Outdoor seating" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-natural-wood mb-2">Comfortable Outdoor Seating</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Relax in style with our collection of ergonomic and weather-resistant outdoor seating. From lounge chairs to dining sets, crafted for durability and comfort.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$299.00</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Fire Pits -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-earth-stone">
+                    <img src="p8.avif" alt="Fire pits" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-earth-stone mb-2">Modern Fire Pits & Heaters</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Gather around a warm, inviting fire pit. Our selection includes various styles, from minimalist designs to robust, multi-functional units, perfect for evening ambiance.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$349.50</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Outdoor Lighting -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-sky">
+                    <img src="p9.avif" alt="Outdoor lighting" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-sky mb-2">Sustainable Outdoor Lighting</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Illuminate your pathways and features with our energy-efficient outdoor lighting solutions, including solar-powered options and smart LED systems.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$89.99</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Sustainable Backyard Accessories -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-green-spring">
+                    <img src="p10.webp" alt="Sustainable backyard accessories" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-green-spring mb-2">Sustainable Garden Tools</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Equip yourself with high-quality, eco-friendly garden tools and accessories designed for longevity and minimal environmental impact.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$75.00</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Composting Solutions -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-natural-wood">
+                    <img src="p11.avif" alt="Composting solutions" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-natural-wood mb-2">Composting Solutions</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Transform kitchen and yard waste into nutrient-rich soil with our range of compost bins and tumblers. Easy to use and environmentally beneficial.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$120.00</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Rain Barrels -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-earth-stone">
+                    <img src="p12.avif" alt="Rain barrels" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-earth-stone mb-2">Stylish Rain Barrels</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Collect rainwater for your garden with our attractive and functional rain barrels. A simple way to conserve water and reduce your ecological footprint.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$180.00</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+
+                <!-- Bird Feeders & Houses -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-sky">
+                    <img src="p13.webp" alt="Bird feeders and houses" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-semibold text-blue-sky mb-2">Bird Feeders & Houses</h3>
+                        <p class="text-earth-stone mb-4 text-sm">
+                            Invite local wildlife into your garden with our charming and eco-friendly bird feeders and houses, enhancing biodiversity and natural beauty.
+                        </p>
+                        <span class="text-lg font-bold text-earth-stone">$35.00</span>
+                        <button class="btn-primary w-full mt-4">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Before & After Gallery -->
+    <section id="gallery" class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading">Before & After Gallery</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                Witness the incredible transformations of real client spaces. Our interactive gallery showcases the dramatic impact of GreenSpring Backyard's design and landscaping expertise.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-green-spring">
+                    <div class="relative w-full h-80">
+                      
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xl font-bold opacity-0 hover:opacity-100 transition-opacity duration-500">
+                            Hover to see the transformation!
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-spring mb-2">Compact City Patio to Green Oasis</h3>
+                        <p class="text-earth-stone text-sm">
+                            This urban backyard was a neglected concrete slab. We transformed it into a vibrant, multi-functional oasis with vertical gardens, custom built-in seating, and a smart irrigation system, making it perfect for morning coffee and evening relaxation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-blue-sky">
+                    <div class="relative w-full h-80">
+                       
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xl font-bold opacity-0 hover:opacity-100 transition-opacity duration-500">
+                            Hover to see the transformation!
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-blue-sky mb-2">Sprawling Lawn to Family Entertainment Hub</h3>
+                        <p class="text-earth-stone text-sm">
+                            From an uninspired lawn to a dynamic family space! We added a durable play zone, a shaded dining area with a pergola, and native plant landscaping, creating a perfect environment for both active play and relaxed family gatherings.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-natural-wood">
+                    <div class="relative w-full h-80">
+                        
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xl font-bold opacity-0 hover:opacity-100 transition-opacity duration-500">
+                            Hover to see the transformation!
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-natural-wood mb-2">Unused Corner to Serene Garden Nook</h3>
+                        <p class="text-earth-stone text-sm">
+                            This forgotten corner of the yard was transformed into a tranquil garden retreat. Featuring a small bubbling fountain, a comfortable bench, and fragrant, low-maintenance plants, it's now the perfect spot for quiet contemplation.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-earth-stone">
+                    <div class="relative w-full h-80">
+                     
+                        <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 text-white text-xl font-bold opacity-0 hover:opacity-100 transition-opacity duration-500">
+                            Hover to see the transformation!
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-earth-stone mb-2">Basic Backyard to Entertainer's Paradise</h3>
+                        <p class="text-earth-stone text-sm">
+                            We converted a simple backyard into an entertainer's dream. This project included a fully equipped outdoor kitchen, a spacious dining patio, and a cozy fire pit lounge, all designed for seamless indoor-outdoor flow and memorable gatherings.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Backyard Blog -->
+    <section id="blog" class="py-16 bg-blue-sky bg-opacity-10">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading text-blue-sky">The Backyard Blog</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                Stay inspired with our latest articles on seasonal planting, outdoor living trends, and DIY backyard improvement ideas.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-green-spring">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-green-spring mb-2">Spring Planting Guide: What to Plant Now!</h3>
+                        <p class="text-sm text-earth-stone mb-4">
+                            As the days grow longer and temperatures rise, spring is the perfect time to breathe new life into your garden. This comprehensive guide will walk you through the best plants to sow, how to prepare your soil, and essential tips for a thriving spring garden. We cover everything from vibrant annuals to hardy perennials and delicious edibles that flourish in the spring sunshine. Get ready to enjoy a burst of color and fresh produce right from your backyard!
+                        </p>
+                        <a href="#" class="text-blue-sky hover:underline font-medium">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-natural-wood">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-natural-wood mb-2">Top 5 Outdoor Living Trends for 2025</h3>
+                        <p class="text-sm text-earth-stone mb-4">
+                            Stay ahead of the curve with our insights into the hottest outdoor living trends for the upcoming year. Discover innovative designs, sustainable materials, and smart technology integrations that are shaping the future of backyard spaces. From multi-functional zones to biophilic design principles, learn how to incorporate these trends into your own outdoor sanctuary and create a space that is both stylish and functional.
+                        </p>
+                        <a href="#" class="text-green-spring hover:underline font-medium">Read More &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Blog Post 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden border border-earth-stone">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold text-earth-stone mb-2">DIY Backyard: Easy Weekend Improvement Ideas</h3>
+                        <p class="text-sm text-earth-stone mb-4">
+                            Looking to spruce up your backyard without a major overhaul? Our DIY guide offers simple, impactful projects you can complete over a weekend. Learn how to build a raised garden bed, create a cozy fire pit area, or install charming string lights to transform your outdoor space on a budget. These projects are perfect for beginners and seasoned DIY enthusiasts alike, providing quick wins for a more inviting backyard.
+                        </p>
+                        <a href="#" class="text-blue-sky hover:underline font-medium">Read More &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Tools & Features -->
+    <section class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading">Interactive Tools & Features</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                Empower your backyard design journey with our intuitive tools, designed to help you visualize, plan, and estimate your dream outdoor space.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Backyard Size Planner -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-green-spring">
+                    <h3 class="text-2xl font-semibold text-green-spring mb-3">Backyard Size Planner</h3>
+                    <p class="text-earth-stone mb-4">
+                        Input your space dimensions and receive personalized design suggestions tailored to your specific area. Our planner considers factors like sunlight, existing features, and desired functionalities to provide optimal layout ideas and plant recommendations. Get a head start on visualizing your perfect backyard, no matter how big or small.
+                    </p>
+                    <button class="btn-primary">Launch Planner</button>
+                </div>
+
+                <!-- Green Upgrade Calculator -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-sky">
+                    <h3 class="text-2xl font-semibold text-blue-sky mb-3">Green Upgrade Calculator</h3>
+                    <p class="text-earth-stone mb-4">
+                        Estimate the cost and potential eco-savings of incorporating sustainable features into your backyard. From rainwater harvesting systems to solar lighting and drought-tolerant landscaping, see the long-term benefits for both your wallet and the environment. Make informed decisions for a greener, more efficient outdoor space.
+                    </p>
+                    <button class="btn-primary">Calculate Savings</button>
+                </div>
+
+                <!-- Moodboard Builder -->
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-natural-wood">
+                    <h3 class="text-2xl font-semibold text-natural-wood mb-3">Moodboard Builder</h3>
+                    <p class="text-earth-stone mb-4">
+                        Unleash your creativity and build visual inspiration for your ideal backyard. Drag and drop images of plants, materials, furniture, and design styles to create a cohesive moodboard that captures your aesthetic vision. Share your moodboard with our designers to articulate your preferences with ease.
+                    </p>
+                    <button class="btn-primary">Create Moodboard</button>
+                </div>
+
+                <!-- Virtual Consultation Booking -->
+                <div id="virtual-consultation-booking" class="bg-white p-8 rounded-xl shadow-lg border border-earth-stone">
+                    <h3 class="text-2xl font-semibold text-earth-stone mb-3">Virtual Consultation Booking</h3>
+                    <p class="text-earth-stone mb-4">
+                        Easily schedule a virtual consultation with our design experts. Discuss your project, get personalized advice, and explore possibilities from the comfort of your home. Our online booking system makes it simple to find a time that works for you and connect with our team.
+                    </p>
+                    <button class="btn-primary">Book Now</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Experience -->
+    <section class="py-16 bg-blue-sky bg-opacity-10">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="section-heading text-blue-sky">Seamless Mobile Experience</h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto text-earth-stone">
+                Access GreenSpring Backyard anytime, anywhere. Our website is fully optimized for mobile devices, ensuring a smooth and intuitive experience on the go.
+            </p>
+            <div class="flex flex-col md:flex-row items-center justify-center gap-8">
+                <div class="w-full md:w-1/2 lg:w-1/3 bg-white p-6 rounded-xl shadow-lg border border-green-spring">
+                    <ul class="list-disc list-inside text-left text-earth-stone space-y-2">
+                        <li>Browse designs and shop essentials with ease.</li>
+                        <li>Quick-access planting tips and DIY guides.</li>
+                        <li>Share your own backyard transformations.</li>
+                        <li>Receive notifications for seasonal deals and workshops.</li>
+                        <li>Schedule consultations directly from your phone.</li>
+                    </ul>
+                </div>
+                <div class="w-full md:w-1/2 lg:w-1/3 text-left text-earth-stone">
+                    <p class="mb-4">
+                        Our mobile-first approach ensures that whether you're browsing design inspirations during your commute, shopping for eco-friendly upgrades from your garden, or scheduling a virtual consultation from your patio, the GreenSpring Backyard experience is always seamless and enjoyable. The interface is designed for touch, with large, easy-to-tap buttons and clear navigation.
+                    </p>
+                    <p>
+                        You can quickly upload photos of your current backyard space to get personalized advice, or share your dream designs with friends and family. Receive timely notifications about new blog posts, exclusive seasonal deals, and upcoming workshops to help you make the most of your outdoor living.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why GreenSpring Backyard is Unique -->
+    <section class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading">Why GreenSpring Backyard is Unique</h2>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                We stand out by blending innovative design with a deep commitment to sustainability and client satisfaction.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-green-spring">
+                    <h3 class="text-2xl font-semibold text-green-spring mb-3">Stylish Design Meets Practicality</h3>
+                    <p class="text-earth-stone">
+                        We don't just create beautiful spaces; we design outdoor environments that are highly functional and perfectly suited to your lifestyle. Every element is chosen for both its aesthetic appeal and its practical utility, ensuring your backyard is as enjoyable as it is beautiful.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-sky">
+                    <h3 class="text-2xl font-semibold text-blue-sky mb-3">Sustainability at Our Core</h3>
+                    <p class="text-earth-stone">
+                        Our unwavering focus on eco-friendly design and natural aesthetics sets us apart. We prioritize sustainable materials, water-saving techniques, and native planting to create landscapes that are not only stunning but also environmentally responsible.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-natural-wood">
+                    <h3 class="text-2xl font-semibold text-natural-wood mb-3">Solutions for Every Space</h3>
+                    <p class="text-earth-stone">
+                        Whether you have a compact city patio, a modest family garden, or an expansive backyard retreat, GreenSpring Backyard offers tailored solutions. No project is too small or too large for our dedicated team.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-earth-stone">
+                    <h3 class="text-2xl font-semibold text-earth-stone mb-3">Empowering Homeowners</h3>
+                    <p class="text-earth-stone">
+                        We inspire everyday homeowners to unlock the full potential of their outdoor spaces. Our designs are accessible, our processes transparent, and our goal is to empower you to create the backyard you've always dreamed of.
+                    </p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-green-spring">
+                    <h3 class="text-2xl font-semibold text-green-spring mb-3">Modern Living, Eco-Conscious Values</h3>
+                    <p class="text-earth-stone">
+                        GreenSpring Backyard seamlessly blends modern backyard living with strong eco-conscious values. We prove that you don't have to compromise on style or comfort to create a sustainable and environmentally friendly outdoor haven.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customer Satisfaction Section -->
+    <section class="py-16 bg-blue-sky bg-opacity-10">
+        <div class="container mx-auto px-6 md:px-12 text-center">
+            <h2 class="section-heading text-blue-sky">What Our Clients Say</h2>
+            <p class="text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                Hear directly from homeowners who have transformed their outdoor spaces with GreenSpring Backyard. Their satisfaction is our greatest reward.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-green-spring">
+                    <p class="text-earth-stone italic mb-4">
+                        "GreenSpring Backyard completely revolutionized our small urban patio! It went from an unused space to our favorite spot for morning coffee. The vertical garden is stunning, and the eco-friendly solutions they suggested were perfect. Highly recommend their innovative approach!"
+                    </p>
+                    <p class="font-semibold text-green-spring">- Sarah L., Urban Homeowner</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-blue-sky">
+                    <p class="text-earth-stone italic mb-4">
+                        "We needed a backyard that could keep up with our active family, and GreenSpring delivered beyond our expectations. The play area is robust, the landscaping is beautiful and low-maintenance, and the outdoor dining space is perfect for entertaining. They truly understood our needs."
+                    </p>
+                    <p class="font-semibold text-blue-sky">- Mark & Emily T., Family Homeowners</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-natural-wood">
+                    <p class="text-earth-stone italic mb-4">
+                        "The team at GreenSpring Backyard helped us create the most serene garden nook. It's my personal sanctuary now, with the gentle sound of the water feature and beautiful, fragrant plants. Their attention to detail and commitment to natural beauty is unparalleled."
+                    </p>
+                    <p class="font-semibold text-natural-wood">- David R., Garden Enthusiast</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg border border-earth-stone">
+                    <p class="text-earth-stone italic mb-4">
+                        "Our outdoor kitchen and lounge area designed by GreenSpring Backyard is the envy of all our friends! It's incredibly functional and stylish, making entertaining a breeze. We appreciate their focus on sustainable materials without compromising on luxury."
+                    </p>
+                    <p class="font-semibold text-earth-stone">- Jessica M., Outdoor Entertainer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Disclaimer Section -->
+    <section class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12">
+            <h2 class="section-heading">Disclaimer</h2>
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-earth-stone text-earth-stone leading-relaxed text-sm">
+                <p class="mb-4">
+                    Welcome to GreenSpring Backyard. Please read this disclaimer carefully before using our website or engaging with our services. By accessing or using this website, you agree to be bound by the terms and conditions set forth in this disclaimer. If you do not agree with any part of this disclaimer, you must not use our website or services.
+                </p>
+                <p class="mb-4">
+                    <strong>Information Accuracy:</strong> While GreenSpring Backyard strives to ensure that the information on this website is accurate and up-to-date, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability with respect to the website or the information, products, services, or related graphics contained on the website for any purpose. Any reliance you place on such information is therefore strictly at your own risk.
+                </p>
+                <p class="mb-4">
+                    <strong>Design and Project Outcomes:</strong> The design inspirations, before & after galleries, and project descriptions presented on this website are illustrative examples of our work and potential outcomes. Actual results may vary depending on various factors including, but not limited to, site conditions, client preferences, material availability, budget constraints, local regulations, and environmental factors. GreenSpring Backyard does not guarantee identical results for any project. All design consultations and project proposals will be based on specific client requirements and site assessments.
+                </p>
+                <p class="mb-4">
+                    <strong>Pricing and Estimates:</strong> Any pricing or cost estimates mentioned on this website, including those from interactive tools like the "Green Upgrade Calculator," are for informational purposes only and are subject to change without notice. These are estimates and do not constitute a binding offer. Final project costs will be determined after a detailed consultation, site assessment, and formal proposal. We recommend obtaining a personalized quote for accurate pricing.
+                </p>
+                <p class="mb-4">
+                    <strong>External Links:</strong> This website may contain links to external websites that are not provided or maintained by or in any way affiliated with GreenSpring Backyard. Please note that GreenSpring Backyard does not guarantee the accuracy, relevance, timeliness, or completeness of any information on these external websites. The inclusion of any links does not necessarily imply a recommendation or endorse the views expressed within them.
+                </p>
+                <p class="mb-4">
+                    <strong>Limitation of Liability:</strong> In no event will GreenSpring Backyard be liable for any loss or damage including without limitation, indirect or consequential loss or damage, or any loss or damage whatsoever arising from loss of data or profits arising out of, or in connection with, the use of this website or our services. Your use of this website and reliance on any information contained herein is solely at your own risk.
+                </p>
+                <p class="mb-4">
+                    <strong>Intellectual Property:</strong> All content on this website, including text, graphics, logos, images, and software, is the property of GreenSpring Backyard or its content suppliers and is protected by international copyright laws. Unauthorized use, reproduction, or distribution of any content from this website is strictly prohibited.
+                </p>
+                <p class="mb-4">
+                    <strong>Changes to Disclaimer:</strong> GreenSpring Backyard reserves the right to amend this disclaimer at any time without prior notice. By continuing to use this website after any such changes, you agree to be bound by the updated terms. We encourage you to review this disclaimer periodically for any modifications.
+                </p>
+                <p class="mb-4">
+                    <strong>Governing Law:</strong> This disclaimer shall be governed by and construed in accordance with the laws of the jurisdiction where GreenSpring Backyard is registered, without regard to its conflict of law provisions.
+                </p>
+                <p>
+                    For any questions regarding this disclaimer, please contact us through the information provided in the footer.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-natural-wood text-white py-12 px-6 md:px-12 rounded-t-xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">About GreenSpring Backyard</h3>
+                <p class="text-sm leading-relaxed">
+                    GreenSpring Backyard is passionate about creating exceptional outdoor living spaces. We blend innovative design with sustainable practices to deliver beautiful, functional, and eco-conscious environments for every home. Our team is dedicated to bringing your backyard dreams to life.
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">Contact Us</h3>
+                <p class="text-sm mb-2">
+                    <strong>Address:</strong> 123 GreenSpring Lane, Natureville, CA 90210, USA
+                </p>
+                <p class="text-sm mb-2">
+                    <strong>Phone:</strong> +1 (555) 123-4567
+                </p>
+                <p class="text-sm mb-2">
+                    <strong>Email:</strong> <a href="mailto:info@greenspringbackyard.com" class="hover:underline">info@greenspringbackyard.com</a>
+                </p>
+                <p class="text-sm">
+                    <strong>Business Hours:</strong> Mon-Fri: 9:00 AM - 5:00 PM (PST)
+                </p>
+            </div>
+
+            <!-- Quick Links & Social Media -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">Connect With Us</h3>
+                <ul class="text-sm space-y-2 mb-4">
+                    <li><a href="#design-inspirations" class="hover:underline">Design Inspirations</a></li>
+                    <li><a href="#our-services" class="hover:underline">Our Services</a></li>
+                    <li><a href="#shop-essentials" class="hover:underline">Shop Essentials</a></li>
+                    <li><a href="#blog" class="hover:underline">The Backyard Blog</a></li>
+                </ul>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.002 3.797.048.843.04 1.15.138 1.504.232.665.176 1.263.456 1.845.79.996.545 1.896 1.25 2.607 2.066.71.816 1.25 1.76 1.79 2.76.34.605.61 1.28.784 1.979.047.917.058 1.245.058 3.709s-.011 2.792-.058 3.709c-.03.68-.147 1.26-.35 1.813-.203.553-.478 1.053-.875 1.493-.398.44-.866.788-1.38 1.11-.514.32-.99.55-1.51.71-.52.16-1.035.248-1.555.275-.918.047-1.245.058-3.71.058s-2.792-.011-3.71-.058c-.52-.027-1.035-.115-1.555-.275-.514-.32-.982-.55-1.38-1.11-.398-.44-.673-.94-.875-1.493-.203-.553-.32-1.133-.35-1.813-.047-.917-.058-1.245-.058-3.709s.011-2.792.058-3.709c.03-.68.147-1.26.35-1.813.203-.553.478-1.053.875-1.493.398-.44.866-.788 1.38-1.11.514-.32.99-.55 1.51-.71.52-.16 1.035-.248 1.555-.275C9.507 2.011 9.835 2 12.315 2zm0 2.18c-2.15 0-2.423.008-3.27.048-.45.02-1.006.09-1.432.207-.426.117-.79.29-1.11.51-.32.22-.59.48-.82.77-.23.29-.42.61-.55.95-.13.34-.23.707-.27 1.08-.04.84-.04 1.11-.04 3.26s0 2.42.04 3.26c.04.37.14.73.27 1.08.13.34.32.66.55.95.23.29.49.55.82.77.32.22.68.39 1.11.51.426.117.982.187 1.432.207.847.04 1.12.048 3.27.048s2.423-.008 3.27-.048c.45-.02 1.006-.09 1.432-.207.426-.117.79-.29 1.11-.51.32-.22.59-.48.82-.77.23-.29.42-.61.55-.95.13-.34.23-.707.27-1.08.04-.84.04-1.11.04-3.26s0-2.42-.04-3.26c-.04-.37-.14-.73-.27-1.08-.13-.34-.32-.66-.55-.95-.23-.29-.49-.55-.82-.77-.32-.22-.68-.39-1.11-.51-.426-.117-.982-.187-1.432-.207-1.74-.09-2.01-.11-3.26-.11zM12.315 6.84c-2.81 0-5.09 2.28-5.09 5.09s2.28 5.09 5.09 5.09 5.09-2.28 5.09-5.09-2.28-5.09-5.09-5.09zM12.315 8.95c1.63 0 2.95 1.32 2.95 2.95s-1.32 2.95-2.95 2.95-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95zm5.3-.92c-.82 0-1.49.67-1.49 1.49s.67 1.49 1.49 1.49 1.49-.67 1.49-1.49-.67-1.49-1.49-1.49z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.107 4.107 0 001.27 5.477A4.072 4.072 0 012 10.425v.05c0 4.454 3.102 8.133 7.24 8.968a4.09 4.09 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.076c-.681 0-1.34-.034-1.99-.115a11.622 11.622 0 0010.165 3.79z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-green-spring pt-6">
+            &copy; 2025 GreenSpring Backyard. All rights reserved.
+        </div>
+    </footer>
+
+</body>
+</html>

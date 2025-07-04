@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookie Policy - GreenSpring Backyard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Warm Sand Beige */
+            color: #757575; /* Earth Stone Gray for text */
+        }
+        .text-green-spring {
+            color: #66BB6A; /* Fresh Grass Green */
+        }
+        .bg-green-spring {
+            background-color: #66BB6A; /* Fresh Grass Green */
+        }
+        .text-blue-sky {
+            color: #4FC3F7; /* Spring Sky Blue */
+        }
+        .bg-blue-sky {
+            background-color: #4FC3F7; /* Spring Sky Blue */
+        }
+        .text-earth-stone {
+            color: #757575; /* Earth Stone Gray */
+        }
+        .bg-earth-stone {
+            background-color: #757575; /* Earth Stone Gray */
+        }
+        .bg-warm-sand {
+            background-color: #FFF8E1; /* Warm Sand Beige */
+        }
+        .bg-natural-wood {
+            background-color: #8D6E63; /* Natural Wood Brown */
+        }
+        .border-natural-wood {
+            border-color: #8D6E63; /* Natural Wood Brown */
+        }
+        .btn-primary {
+            @apply bg-green-spring text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-transparent border border-green-spring text-green-spring font-semibold py-3 px-6 rounded-lg hover:bg-green-spring hover:text-white transition duration-300 ease-in-out;
+        }
+        .section-heading {
+            @apply text-4xl font-bold text-earth-stone mb-8 text-center;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF8E1; /* Warm Sand Beige */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #66BB6A; /* Fresh Grass Green */
+            border-radius: 10px;
+            border: 3px solid #FFF8E1; /* Warm Sand Beige */
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4CAF50; /* Slightly darker green on hover */
+        }
+
+        /* Cookie Consent Banner Styling */
+        #cookie-consent-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #757575; /* Earth Stone Gray */
+            color: white;
+            padding: 1.5rem;
+            text-align: center;
+            box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 1rem;
+            border-top-left-radius: 1rem;
+            border-top-right-radius: 1rem;
+        }
+        #cookie-consent-banner p {
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            line-height: 1.4;
+            max-width: 90%;
+        }
+        #cookie-consent-banner .cookie-buttons {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #cookie-consent-banner .cookie-buttons button {
+            @apply py-2 px-4 rounded-lg font-semibold transition duration-300 ease-in-out;
+            min-width: 120px;
+        }
+        #cookie-consent-banner .cookie-buttons .accept-btn {
+            @apply bg-green-spring text-white hover:bg-green-700;
+        }
+        #cookie-consent-banner .cookie-buttons .decline-btn {
+            @apply bg-transparent border border-white text-white hover:bg-white hover:text-earth-stone;
+        }
+        #cookie-consent-banner .cookie-buttons .manage-btn {
+            @apply bg-blue-sky text-white hover:bg-blue-600;
+        }
+
+        @media (min-width: 768px) {
+            #cookie-consent-banner {
+                flex-direction: row;
+                justify-content: space-between;
+                padding: 1rem 2rem;
+            }
+            #cookie-consent-banner p {
+                text-align: left;
+                margin-bottom: 0;
+                max-width: 70%;
+            }
+            #cookie-consent-banner .cookie-buttons {
+                flex-wrap: nowrap;
+            }
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+    <!-- Header (similar to main site for consistency) -->
+    <header class="bg-warm-sand shadow-lg py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <a href="index.html" class="text-3xl font-bold text-green-spring flex items-center">
+                    <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    GreenSpring Backyard
+                </a>
+            </div>
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-8 text-lg font-medium">
+             <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 md:mt-0 flex space-x-4">
+                <a href="index.html#design-quote" class="btn-primary">Get a Design Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Cookie Policy Content -->
+    <main class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+            <h1 class="section-heading">Cookie Policy</h1>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                Last Updated: July 3, 2025
+            </p>
+
+            <div class="bg-white p-8 rounded-xl shadow-lg border border-earth-stone text-earth-stone leading-relaxed text-sm space-y-6">
+
+                <p>
+                    This Cookie Policy explains how GreenSpring Backyard ("we," "our," or "us") uses cookies and similar technologies when you visit our website at <a href="https://www.greenspringbackyard.com" class="text-blue-sky hover:underline">www.greenspringbackyard.com</a> (the "Site"). It explains what these technologies are, why we use them, and your rights to control our use of them.
+                </p>
+                <p>
+                    In some cases, we may use cookies to collect personal information, or that becomes personal information if we combine it with other information. In such cases, our <a href="privacy.html" class="text-blue-sky hover:underline">Privacy Policy</a> will apply in addition to this Cookie Policy.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">1. What are Cookies?</h2>
+                <p>
+                    Cookies are small data files that are placed on your computer or mobile device when you visit a website. Cookies are widely used by website owners in order to make their websites work, or to work more efficiently, as well as to provide reporting information.
+                </p>
+                <p>
+                    Cookies set by the website owner (in this case, GreenSpring Backyard) are called "first-party cookies." Cookies set by parties other than the website owner are called "third-party cookies." Third-party cookies enable third-party features or functionality to be provided on or through the website (e.g., advertising, interactive content, and analytics). The parties that set these third-party cookies can recognize your computer both when it visits the website in question and also when it visits certain other websites.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">2. Why Do We Use Cookies?</h2>
+                <p>
+                    We use first-party and third-party cookies for several reasons. Some cookies are required for our website to operate, and we refer to these as "essential" or "strictly necessary" cookies. Other cookies enable us to track and target the interests of our users to enhance the experience on our Site. Third parties serve cookies through our website for advertising, analytics, and other purposes. This is described in more detail below.
+                </p>
+                <p>
+                    The specific types of first-party and third-party cookies served through our Site and the purposes they perform are described in the following sections.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">3. Types of Cookies We Use</h2>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">3.1. Essential Cookies</h3>
+                <p>
+                    These cookies are strictly necessary to provide you with services available through our Site and to enable you to use some of its features, such as accessing secure areas. Without these cookies, services like shopping carts, e-billing, and secure login cannot be provided. They are typically set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in, or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+                </p>
+                <p>
+                    <strong>Purpose:</strong> To enable core website functionality and security.
+                    <br><strong>Examples:</strong> Session cookies for login, security cookies to prevent fraud.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">3.2. Performance and Functionality Cookies</h3>
+                <p>
+                    These cookies are used to enhance the performance and functionality of our Site but are non-essential to their use. However, without these cookies, certain functionality (like videos) may become unavailable. They allow us to remember choices you make (such as your username, language, or the region you are in) and provide enhanced, more personal features. For example, remembering your login details, or remembering changes you have made to text size, fonts, and other parts of web pages that you can customize. They may also be used to provide services you have asked for such as watching a video or commenting on a blog. The information these cookies collect may be anonymized and they cannot track your browsing activity on other websites.
+                </p>
+                <p>
+                    <strong>Purpose:</strong> To improve user experience and remember user preferences.
+                    <br><strong>Examples:</strong> Language preference cookies, volume settings for videos.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">3.3. Analytics and Customization Cookies</h3>
+                <p>
+                    These cookies collect information that is used either in aggregate form to help us understand how our Site is being used or how effective our marketing campaigns are, or to help us customize our Site for you. They help us to know which pages are the most and least popular and see how visitors move around the Site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies, we will not know when you have visited our site and will not be able to monitor its performance. We use this data to improve our website's structure, content, and services.
+                </p>
+                <p>
+                    <strong>Purpose:</strong> To analyze website traffic and usage patterns, and to personalize content.
+                    <br><strong>Examples:</strong> Google Analytics cookies, A/B testing cookies.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">3.4. Advertising Cookies</h3>
+                <p>
+                    These cookies are used to make advertising messages more relevant to you. They perform functions like preventing the same ad from continuously reappearing, ensuring that ads are properly displayed for advertisers, and in some cases selecting advertisements that are based on your interests. They are usually placed by advertising networks with the website operator’s permission. They remember that you have visited a website and this information is shared with other organizations such as advertisers. Quite often, targeting or advertising cookies will be linked to site functionality provided by the other organization.
+                </p>
+                <p>
+                    <strong>Purpose:</strong> To deliver relevant advertisements and track ad campaign performance.
+                    <br><strong>Examples:</strong> Retargeting cookies, social media advertising cookies.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">3.5. Social Networking Cookies</h3>
+                <p>
+                    These cookies are used to enable you to share pages and content that you find interesting on our Site through third-party social networking and other websites. These cookies may also be used for advertising purposes. They can track your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies, you may not be able to use or see these sharing tools.
+                </p>
+                <p>
+                    <strong>Purpose:</strong> To enable social media sharing and integration.
+                    <br><strong>Examples:</strong> Facebook Connect cookies, Twitter integration cookies.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">4. Other Tracking Technologies</h2>
+                <p>
+                    We may use other, similar technologies from time to time, like web beacons (sometimes called "tracking pixels" or "clear gifs"). These are tiny graphics files that contain a unique identifier that enable us to recognize when someone has visited our Site or opened an email that we have sent them. This allows us, for example, to monitor the traffic patterns of users from one page within our Site to another, to deliver or communicate with cookies, to understand whether you have come to our Site from an online advertisement displayed on a third-party website, to improve site performance, and to measure the success of email marketing campaigns. In many instances, these technologies are reliant on cookies to function properly, and so declining cookies will impair their functioning.
+                </p>
+                <p>
+                    We may also use "Flash Cookies" (also known as Local Shared Objects or "LSOs") to, among other things, collect and store information about your use of our services, fraud prevention, and for other site operations. If you do not want Flash Cookies stored on your computer, you can adjust the settings of your Flash player to block Flash Cookies storage using the tools contained in the Website Storage Settings Panel. You can also control Flash Cookies by going to the Global Storage Settings Panel and following the instructions. Please note that setting the Flash Player to restrict or limit acceptance of Flash Cookies may reduce or impede the functionality of some Flash applications, including, potentially, Flash applications used in connection with our services or online content.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">5. How You Can Control Cookies</h2>
+                <p>
+                    You have the right to decide whether to accept or reject cookies. You can exercise your cookie preferences by clicking on the appropriate opt-out links provided in the cookie consent banner or by setting your preferences within your browser.
+                </p>
+                <p>
+                    Most web browsers allow you to manage cookies through their settings. You can usually find these settings in the "options" or "preferences" menu of your browser. The following links may be helpful, or you can use the "Help" option in your browser for more details:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><a href="https://support.google.com/chrome/answer/95647?hl=en" target="_blank" class="text-blue-sky hover:underline">Cookie settings in Chrome</a></li>
+                    <li><a href="https://support.mozilla.org/en-US/kb/enable-and-disable-cookies-website-preferences" target="_blank" class="text-blue-sky hover:underline">Cookie settings in Firefox</a></li>
+                    <li><a href="https://support.microsoft.com/en-us/windows/delete-and-manage-cookies-168dab11-0753-043d-7c16-ede5947fc64d" target="_blank" class="text-blue-sky hover:underline">Cookie settings in Edge</a></li>
+                    <li><a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac" target="_blank" class="text-blue-sky hover:underline">Cookie settings in Safari (Mac)</a></li>
+                    <li><a href="https://support.apple.com/en-us/HT201265" target="_blank" class="text-blue-sky hover:underline">Cookie settings in Safari (iOS)</a></li>
+                </ul>
+                <p>
+                    Please note that if you choose to remove or reject cookies, this could affect the availability and functionality of our Site. Certain features of the Site may not function correctly if you disable cookies.
+                </p>
+                <p>
+                    Additionally, most advertising networks offer you a way to opt out of targeted advertising. If you would like to find out more information, please visit:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><a href="http://www.aboutads.info/choices/" target="_blank" class="text-blue-sky hover:underline">Digital Advertising Alliance</a></li>
+                    <li><a href="http://www.youronlinechoices.com/" target="_blank" class="text-blue-sky hover:underline">YourOnlineChoices</a></li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">6. Updates to This Cookie Policy</h2>
+                <p>
+                    We may update this Cookie Policy from time to time in order to reflect, for example, changes to the cookies we use or for other operational, legal, or regulatory reasons. Please therefore re-visit this Cookie Policy regularly to stay informed about our use of cookies and related technologies.
+                </p>
+                <p>
+                    The date at the top of this Cookie Policy indicates when it was last updated.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">7. More Information</h2>
+                <p>
+                    If you have any questions about our use of cookies or other technologies, please email us at <a href="mailto:info@greenspringbackyard.com" class="text-blue-sky hover:underline">info@greenspringbackyard.com</a> or refer to our <a href="contact.html" class="text-blue-sky hover:underline">Contact Us</a> page.
+                </p>
+                <p>
+                    For more general information on cookies, you can visit <a href="https://www.allaboutcookies.org" target="_blank" class="text-blue-sky hover:underline">www.allaboutcookies.org</a>.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">8. Detailed Breakdown of Cookies Used</h2>
+                <p>
+                    Below is a more detailed list of the types of cookies we may use on our Site, along with their purposes and typical duration. Please note that this list is illustrative and may not be exhaustive, as the specific cookies used can change over time.
+                </p>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">8.1. Strictly Necessary Cookies (Always Active)</h3>
+                <p>
+                    These cookies are essential for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Cookie Name:</strong> `session_id`<br><strong>Purpose:</strong> Maintains user session across page loads (e.g., keeps you logged in).<br><strong>Duration:</strong> Session (deleted when browser closes).</li>
+                    <li><strong>Cookie Name:</strong> `csrf_token`<br><strong>Purpose:</strong> Protects against Cross-Site Request Forgery attacks.<br><strong>Duration:</strong> Session.</li>
+                    <li><strong>Cookie Name:</strong> `cookie_consent`<br><strong>Purpose:</strong> Records your cookie consent preferences.<br><strong>Duration:</strong> 1 year.</li>
+                    <li><strong>Cookie Name:</strong> `cart_id`<br><strong>Purpose:</strong> Stores items in your shopping cart.<br><strong>Duration:</strong> Persistent (e.g., 30 days).</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">8.2. Performance Cookies</h3>
+                <p>
+                    These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies, we will not know when you have visited our site and will not be able to monitor its performance.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Cookie Name:</strong> `_ga` (Google Analytics)<br><strong>Purpose:</strong> Registers a unique ID that is used to generate statistical data on how the visitor uses the website.<br><strong>Duration:</strong> 2 years.</li>
+                    <li><strong>Cookie Name:</strong> `_gid` (Google Analytics)<br><strong>Purpose:</strong> Registers a unique ID that is used to generate statistical data on how the visitor uses the website.<br><strong>Duration:</strong> 24 hours.</li>
+                    <li><strong>Cookie Name:</strong> `_gat` (Google Analytics)<br><strong>Purpose:</strong> Used by Google Analytics to throttle request rate.<br><strong>Duration:</strong> 1 minute.</li>
+                    <li><strong>Cookie Name:</strong> `_clsk` (Clarity)<br><strong>Purpose:</strong> Used by Microsoft Clarity to record user interactions on the website.<br><strong>Duration:</strong> 1 day.</li>
+                    <li><strong>Cookie Name:</strong> `_clck` (Clarity)<br><strong>Purpose:</strong> Used by Microsoft Clarity to record user interactions on the website.<br><strong>Duration:</strong> 1 year.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">8.3. Functional Cookies</h3>
+                <p>
+                    These cookies enable the website to provide enhanced functionality and personalization. They may be set by us or by third-party providers whose services we have added to our pages. If you do not allow these cookies, then some or all of these services may not function properly.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Cookie Name:</strong> `_language`<br><strong>Purpose:</strong> Remembers your preferred language settings.<br><strong>Duration:</strong> 1 year.</li>
+                    <li><strong>Cookie Name:</strong> `_currency`<br><strong>Purpose:</strong> Remembers your preferred currency settings for shopping.<br><strong>Duration:</strong> 1 year.</li>
+                    <li><strong>Cookie Name:</strong> `_remember_me`<br><strong>Purpose:</strong> Allows the website to remember your login details for future visits.<br><strong>Duration:</strong> Persistent (e.g., 30 days).</li>
+                    <li><strong>Cookie Name:</strong> `_video_preferences`<br><strong>Purpose:</strong> Stores user preferences for video playback (e.g., volume, quality).<br><strong>Duration:</strong> 1 year.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">8.4. Targeting / Advertising Cookies</h3>
+                <p>
+                    These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Cookie Name:</strong> `_fbp` (Facebook Pixel)<br><strong>Purpose:</strong> Used by Facebook to deliver a series of advertisement products such as real-time bidding from third-party advertisers.<br><strong>Duration:</strong> 3 months.</li>
+                    <li><strong>Cookie Name:</strong> `IDE` (Doubleclick by Google)<br><strong>Purpose:</strong> Used by Google DoubleClick to register and report the website user's actions after viewing or clicking one of the advertiser's ads with the purpose of measuring the efficacy of an advert and presenting targeted ads to the user.<br><strong>Duration:</strong> 1 year.</li>
+                    <li><strong>Cookie Name:</strong> `_gcl_au` (Google AdSense)<br><strong>Purpose:</strong> Used by Google AdSense for experimenting with advertisement efficiency across websites using their services.<br><strong>Duration:</strong> 3 months.</li>
+                    <li><strong>Cookie Name:</strong> `_pinterest_ct_ua` (Pinterest)<br><strong>Purpose:</strong> Used by Pinterest to track user activity for advertising purposes.<br><strong>Duration:</strong> 1 year.</li>
+                    <li><strong>Cookie Name:</strong> `_tt_enable_cookie` (TikTok)<br><strong>Purpose:</strong> Used by TikTok for advertising and analytics.<br><strong>Duration:</strong> 1 year.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold text-blue-sky mt-6 mb-3">8.5. Social Media Cookies</h3>
+                <p>
+                    These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Cookie Name:</strong> `_fbc` (Facebook)<br><strong>Purpose:</strong> Used to store the last visit time.<br><strong>Duration:</strong> 3 months.</li>
+                    <li><strong>Cookie Name:</strong> `_tw_session` (Twitter)<br><strong>Purpose:</strong> Used by Twitter for session management and user authentication.<br><strong>Duration:</strong> Session.</li>
+                    <li><strong>Cookie Name:</strong> `_linkedin_oauth_2_authorization_state` (LinkedIn)<br><strong>Purpose:</strong> Used by LinkedIn for user authentication and integration.<br><strong>Duration:</strong> Session.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">9. How to Manage Your Cookie Preferences</h2>
+                <p>
+                    You can manage your cookie preferences directly through our cookie consent banner that appears when you first visit our site. You can also adjust your browser settings to accept or refuse cookies. Please be aware that restricting cookies may impact the functionality of our website.
+                </p>
+                <p>
+                    For specific instructions on how to manage cookies in your browser, please refer to the links provided in Section 5.
+                </p>
+                <p>
+                    If you wish to opt-out of interest-based advertising, you can visit the Network Advertising Initiative Opt-Out Tool or the Digital Advertising Alliance Opt-Out Tool.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">10. Your Consent</h2>
+                <p>
+                    By continuing to use our Site without adjusting your browser settings to block cookies, you are consenting to our use of cookies as described in this Cookie Policy. When you first visit our Site, you will be presented with a clear consent mechanism, allowing you to make an informed choice about our use of cookies.
+                </p>
+                <p>
+                    We will store your cookie preferences for a period of 1 year, after which we may prompt you for your consent again. You can change your preferences at any time by clicking the "Manage Cookie Preferences" button (if available) or by clearing your browser's cookies and revisiting the site.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">11. International Data Transfers</h2>
+                <p>
+                    Information collected through cookies may be transferred to, and processed in, countries other than the country in which you are resident. These countries may have data protection laws that are different from the laws of your country.
+                </p>
+                <p>
+                    Specifically, our website servers are located in [Specify Country/Region, e.g., the United States], and our third-party service providers and partners operate around the world. This means that when we collect your personal information, it may be processed in any of these countries.
+                </p>
+                <p>
+                    However, we have taken appropriate safeguards to require that your personal information will remain protected in accordance with this Cookie Policy. These include implementing the European Commission’s Standard Contractual Clauses for transfers of personal information between our group companies and with our third-party providers, which require all recipients to protect personal information they process from the EEA in accordance with European data protection law.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">12. Data Protection Officer (DPO) / Privacy Contact</h2>
+                <p>
+                    For any questions or concerns regarding this Cookie Policy or our data processing practices, you may contact our dedicated Privacy Contact:
+                </p>
+                <p class="mb-2">
+                    <strong>Privacy Contact:</strong> Data Privacy Team<br>
+                    <strong>Email:</strong> <a href="mailto:privacy@greenspringbackyard.com" class="text-blue-sky hover:underline">privacy@greenspringbackyard.com</a><br>
+                    <strong>Phone:</strong> +1 (555) 123-4567 (Ask for Privacy Team)
+                </p>
+                <p>
+                    Our Privacy Contact is responsible for overseeing our data protection strategy and implementation to ensure compliance with data protection requirements.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">13. Further Information on Data Protection</h2>
+                <p>
+                    For more detailed information about how we collect, use, and share your personal data, please refer to our full <a href="privacy.html" class="text-blue-sky hover:underline">Privacy Policy</a>. This Cookie Policy should be read in conjunction with our Privacy Policy.
+                </p>
+                <p>
+                    We are committed to upholding the principles of data protection, which include:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Lawfulness, fairness, and transparency:</strong> Processing personal data lawfully, fairly, and in a transparent manner.</li>
+                    <li><strong>Purpose limitation:</strong> Collecting personal data for specified, explicit, and legitimate purposes and not further processing it in a manner that is incompatible with those purposes.</li>
+                    <li><strong>Data minimization:</strong> Ensuring personal data is adequate, relevant, and limited to what is necessary in relation to the purposes for which they are processed.</li>
+                    <li><strong>Accuracy:</strong> Ensuring personal data is accurate and, where necessary, kept up to date.</li>
+                    <li><strong>Storage limitation:</strong> Keeping personal data in a form which permits identification of data subjects for no longer than is necessary for the purposes for which the personal data are processed.</li>
+                    <li><strong>Integrity and confidentiality:</strong> Processing personal data in a manner that ensures appropriate security of the personal data, including protection against unauthorized or unlawful processing and against accidental loss, destruction, or damage, using appropriate technical or organizational measures.</li>
+                </ul>
+                <p>
+                    You have the right to make a complaint at any time to the relevant supervisory authority for data protection issues. We would, however, appreciate the chance to deal with your concerns before you approach the supervisory authority, so please contact us in the first instance.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">14. Cookie Consent Management Platform (CMP)</h2>
+                <p>
+                    To provide you with granular control over your cookie preferences, we utilize a Cookie Consent Management Platform (CMP). This platform allows you to:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Accept All:</strong> Consent to all cookies and tracking technologies.</li>
+                    <li><strong>Decline All (Non-Essential):</strong> Reject all cookies that are not strictly necessary for the website's basic functionality.</li>
+                    <li><strong>Customize Preferences:</strong> Selectively enable or disable different categories of cookies (e.g., performance, functional, advertising).</li>
+                    <li><strong>Review Details:</strong> Access detailed information about each cookie, its purpose, provider, and duration.</li>
+                </ul>
+                <p>
+                    Your choices made through the CMP are stored and respected for future visits until your consent expires or you choose to change it. This ensures compliance with various privacy regulations, including GDPR and CCPA.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">15. Browser Settings vs. CMP</h2>
+                <p>
+                    It's important to understand the difference between managing cookies through your browser settings and through our CMP. Browser settings allow you to control cookies globally across all websites you visit. Our CMP, however, provides specific control over the cookies used on the GreenSpring Backyard website. We recommend using our CMP for the most precise control over your preferences on our Site, in conjunction with your browser settings for broader control.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">16. First-Party vs. Third-Party Cookies Explained</h2>
+                <p>
+                    To reiterate, the distinction between first-party and third-party cookies is crucial for understanding your privacy.
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>First-Party Cookies:</strong> These are set directly by the website you are visiting (GreenSpring Backyard in this case). They are generally used for essential functions like remembering your login, language preferences, or items in your shopping cart. They are typically less privacy-invasive.</li>
+                    <li><strong>Third-Party Cookies:</strong> These are set by domains other than the one you are visiting. They are often used for cross-site tracking, advertising, and analytics by external services integrated into the website. Examples include cookies from social media platforms or advertising networks. These are often the focus of privacy concerns.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">17. Data Collected by Cookies</h2>
+                <p>
+                    The data collected by cookies can vary widely depending on their purpose. It can include:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Browsing Activity:</strong> Pages visited, time spent on pages, links clicked.</li>
+                    <li><strong>Device Information:</strong> Browser type, operating system, device type, IP address.</li>
+                    <li><strong>Preferences:</strong> Language, currency, region, display settings.</li>
+                    <li><strong>Interaction Data:</strong> How you interact with specific elements on the site (e.g., video plays, form submissions).</li>
+                    <li><strong>Unique Identifiers:</strong> Anonymous IDs generated to recognize your browser or device over time.</li>
+                </ul>
+                <p>
+                    While many cookies collect anonymized or aggregated data, some, especially advertising cookies, may collect data that can be linked to you over time to build a profile for targeted advertising. We ensure that any personal data collected via cookies is handled in accordance with our Privacy Policy.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">18. Impact of Declining Cookies</h2>
+                <p>
+                    Declining certain categories of cookies will impact your experience on our Site:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Strictly Necessary Cookies:</strong> Cannot be declined. Disabling them via browser settings will likely break core website functionality.</li>
+                    <li><strong>Performance Cookies:</strong> Declining these means we won't be able to gather data on how you use our site, which limits our ability to improve its performance and user experience based on real user behavior.</li>
+                    <li><strong>Functional Cookies:</strong> Declining these may result in a less personalized experience. Features like remembering your language preference, login status (for convenience), or specific settings may not work.</li>
+                    <li><strong>Advertising Cookies:</strong> Declining these will reduce the amount of targeted advertising you see on our Site and other websites. You may still see ads, but they will be less relevant to your interests.</li>
+                    <li><strong>Social Media Cookies:</strong> Declining these will prevent you from using social media sharing features directly on our Site and may impact your experience with social media integrations.</li>
+                </ul>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">19. Cookie Lifespan</h2>
+                <p>
+                    Cookies have different lifespans, which can be categorized as:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Session Cookies:</strong> These are temporary cookies that remain in your browser's cookie file only until you close your browser. They are often used for essential functions like keeping you logged in during a single browsing session.</li>
+                    <li><strong>Persistent Cookies:</strong> These cookies remain in your browser's cookie file even after the browser is closed. They are used to remember your preferences or actions across multiple visits to a website. Their duration can vary from a few days to several years, depending on their purpose.</li>
+                </ul>
+                <p>
+                    The specific duration for each cookie type we use is outlined in Section 8.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">20. Web Beacons and Other Tracking Technologies in Detail</h2>
+                <p>
+                    Beyond traditional cookies, we may employ other technologies to understand user behavior and optimize our services:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Web Beacons (Pixel Tags, Clear GIFs):</strong> These are small graphic images (often transparent) that are embedded in web pages or emails. They are used to track user activity, such as whether a page was viewed or an email was opened. They often work in conjunction with cookies.</li>
+                    <li><strong>Local Storage (HTML5):</strong> Modern web browsers offer "local storage" capabilities that allow websites to store larger amounts of data locally in your browser than traditional cookies. This data persists even after you close your browser. We may use local storage for performance optimization or to remember user preferences.</li>
+                    <li><strong>Device Fingerprinting:</strong> This involves collecting information about your device (e.g., browser type, operating system, installed fonts, screen resolution) to create a unique "fingerprint" that can identify your device across different websites, even without traditional cookies. We only use this for security and fraud prevention purposes and in compliance with privacy laws.</li>
+                </ul>
+                <p>
+                    Our use of these technologies is always aimed at improving your experience, providing relevant content, or ensuring the security and functionality of our Site. We are committed to transparency regarding their use.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">21. Third-Party Service Providers and Their Use of Cookies</h2>
+                <p>
+                    We collaborate with various third-party service providers to enhance our website's functionality, analytics, and advertising efforts. These providers may set their own cookies and tracking technologies on your device when you interact with our Site. Examples include:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Analytics Providers:</strong> Such as Google Analytics, to help us understand website traffic and user behavior.</li>
+                    <li><strong>Advertising Partners:</strong> Such as Google Ads, Facebook, Pinterest, to deliver targeted advertisements based on your interests.</li>
+                    <li><strong>Social Media Platforms:</strong> To enable sharing and integration with social networks.</li>
+                    <li><strong>Payment Processors:</strong> While primarily handling financial data, some may use cookies for fraud prevention and transaction security.</li>
+                </ul>
+                <p>
+                    We select our third-party partners carefully, ensuring they adhere to strong data protection standards. However, we do not control the cookies set by these third parties. We encourage you to review their respective privacy and cookie policies for more information on their data practices.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">22. Your Rights Regarding Cookies and Tracking</h2>
+                <p>
+                    In addition to the ability to control cookies via your browser settings and our CMP, you may have specific legal rights concerning the data collected through cookies, depending on your jurisdiction. These may include:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Right to Access:</strong> Requesting information about the personal data collected about you through cookies.</li>
+                    <li><strong>Right to Erasure:</strong> Requesting the deletion of personal data collected through cookies.</li>
+                    <li><strong>Right to Object:</strong> Objecting to the processing of your personal data collected through cookies, particularly for direct marketing purposes.</li>
+                    <li><strong>Right to Withdraw Consent:</strong> Withdrawing your consent for non-essential cookies at any time.</li>
+                </ul>
+                <p>
+                    To exercise these rights, please contact us using the details provided in Section 12. We will process your request in accordance with applicable data protection laws.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">23. Cookie Audit and Review</h2>
+                <p>
+                    GreenSpring Backyard regularly reviews the cookies and tracking technologies used on our Site. This audit process helps us to:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li>Identify all cookies being set, both first-party and third-party.</li>
+                    <li>Understand the purpose of each cookie.</li>
+                    <li>Assess the data collected by each cookie.</li>
+                    <li>Ensure compliance with relevant privacy regulations.</li>
+                    <li>Update our Cookie Policy to reflect any changes.</li>
+                </ul>
+                <p>
+                    This ongoing review ensures that our cookie practices remain transparent and aligned with our commitment to your privacy.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">24. Cookie Consent Records</h2>
+                <p>
+                    We maintain records of your cookie consent choices. This includes the date and time of your consent, the specific preferences you selected, and the version of the Cookie Policy in effect at that time. These records are kept to demonstrate compliance with data protection regulations and to honor your preferences effectively.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">25. How to Change Your Cookie Preferences After Initial Consent</h2>
+                <p>
+                    If you have already made your cookie choices and wish to change them, you can do so at any time. The easiest way is often by clicking on a "Cookie Settings" or "Manage Consent" link, which we typically place in the footer of our website. Alternatively, you can clear your browser's cookies, and upon your next visit to our Site, the cookie consent banner will reappear, allowing you to set your preferences anew.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">26. Understanding Cookie Categories</h2>
+                <p>
+                    Our cookie consent banner categorizes cookies to help you make informed decisions. Here's a deeper dive into what each category generally entails:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Strictly Necessary:</strong> Essential for basic website operation (e.g., security, network management, accessibility). These cannot be disabled.</li>
+                    <li><strong>Performance/Analytics:</strong> Collects anonymous data on how visitors use the website (e.g., page views, bounce rate) to improve site functionality and user experience.</li>
+                    <li><strong>Functionality/Preference:</strong> Remembers user choices (e.g., language, region) to provide a more personalized experience.</li>
+                    <li><strong>Targeting/Advertising:</strong> Used to deliver more relevant advertisements to users and measure the effectiveness of advertising campaigns.</li>
+                    <li><strong>Social Media:</strong> Enables social sharing features and integrates content from social media platforms.</li>
+                </ul>
+                <p>
+                    By understanding these categories, you can better tailor your cookie preferences to your comfort level.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">27. Data Security and Cookies</h2>
+                <p>
+                    While cookies themselves are not executable code and cannot carry viruses, the data they collect can be vulnerable if not properly secured. We implement robust security measures to protect the data collected through cookies, including encryption and secure server environments. We also ensure that our third-party partners adhere to high security standards to safeguard your information.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">28. Cookie Policy Accessibility</h2>
+                <p>
+                    We strive to make this Cookie Policy accessible and understandable. It is written in clear language and structured with headings for easy navigation. If you require this policy in an alternative format or have any questions about its content, please do not hesitate to contact us.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">29. Future Technologies</h2>
+                <p>
+                    The digital landscape is constantly evolving, and new tracking technologies may emerge. GreenSpring Backyard is committed to staying informed about these developments and will update this Cookie Policy as necessary to reflect our use of any new technologies and their implications for your privacy. We will always strive for transparency and provide you with control over your data.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">30. User-Friendly Controls</h2>
+                <p>
+                    Our aim is to provide you with user-friendly controls over your cookie preferences. The cookie consent banner and any subsequent cookie settings panel are designed to be intuitive and easy to navigate, empowering you to make informed choices about your data privacy without unnecessary complexity.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">31. What Happens If I Decline Cookies?</h2>
+                <p>
+                    If you decline non-essential cookies, you will still be able to browse our website and use its core functionalities. However, certain features that rely on these cookies, such as personalized content, targeted advertisements, or social media sharing buttons, may not function as intended or may not be available to you. Your overall experience might be less tailored to your interests.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">32. How Often Do We Update This Policy?</h2>
+                <p>
+                    We review this Cookie Policy periodically, at least once a year, or more frequently if there are significant changes in our cookie practices, relevant laws, or industry standards. We will notify you of any material changes by updating the "Last Updated" date at the top of this policy and, if appropriate, through a prominent notice on our website.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">33. Opt-Out Mechanisms for Third Parties</h2>
+                <p>
+                    While our CMP provides control over cookies on our Site, many third-party advertising networks and data providers offer their own opt-out mechanisms. We've provided links to some of these industry-wide opt-out pages in Section 5. Utilizing these resources can help you manage your preferences for targeted advertising across a broader range of websites.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">34. Cookie Consent and Legal Compliance</h2>
+                <p>
+                    Our cookie consent mechanism is designed to comply with major privacy regulations globally, including:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>General Data Protection Regulation (GDPR):</strong> Requires explicit consent for non-essential cookies in the EEA and UK.</li>
+                    <li><strong>California Consumer Privacy Act (CCPA):</strong> Provides California residents with the right to opt-out of the "sale" of personal information, which can include data collected via certain cookies.</li>
+                    <li><strong>ePrivacy Directive (Cookie Law):</strong> Requires consent for storing or accessing information on a user's device.</li>
+                </ul>
+                <p>
+                    We are committed to maintaining compliance with these and other relevant privacy laws as they evolve.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">35. Cookie Management for Different Browsers</h2>
+                <p>
+                    Each web browser has its own way of managing cookies. While we provided general links in Section 5, here's a brief overview of common approaches:
+                </p>
+                <ul class="list-disc list-inside ml-4 space-y-1">
+                    <li><strong>Chrome:</strong> Settings > Privacy and security > Site Settings > Cookies and site data.</li>
+                    <li><strong>Firefox:</strong> Options > Privacy & Security > Cookies and Site Data.</li>
+                    <li><strong>Edge:</strong> Settings > Privacy, search, and services > Clear browsing data (choose what to clear) or Cookies and site permissions.</li>
+                    <li><strong>Safari:</strong> Preferences > Privacy > Manage Website Data.</li>
+                </ul>
+                <p>
+                    You can typically block all cookies, accept all cookies, or choose to be notified when a cookie is set. You can also delete existing cookies.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">36. Analytics Data Anonymization</h2>
+                <p>
+                    For analytics cookies, we often implement IP anonymization or other techniques to reduce the ability to identify individual users. This means that your IP address is truncated or masked before it is stored or used for analysis, further protecting your privacy.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">37. Consent Withdrawal Process</h2>
+                <p>
+                    Withdrawing your consent for cookies is as straightforward as giving it. You can typically revisit our cookie consent banner (often linked in the footer as "Cookie Settings" or "Manage Consent") and change your preferences at any time. Your new choices will be applied immediately.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">38. Impact on Personalized Experience</h2>
+                <p>
+                    Cookies play a significant role in personalizing your experience on our Site. For example, if you've previously browsed certain backyard design styles, functional cookies might help us recommend similar content or products. Declining these cookies means your experience might be less tailored, and you might see more generic content.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">39. Transparency and Control</h2>
+                <p>
+                    Our commitment to your privacy extends to providing you with full transparency and control over the cookies used on our Site. This policy, along with our Privacy Policy and the cookie consent banner, is designed to give you all the information and tools you need to manage your preferences effectively.
+                </p>
+
+                <h2 class="text-2xl font-semibold text-green-spring mt-8 mb-4">40. Contact for Cookie-Specific Inquiries</h2>
+                <p>
+                    For any specific questions or concerns directly related to our use of cookies or your cookie preferences, please contact our dedicated team:
+                </p>
+                <p class="mb-2">
+                    <strong>Cookie Policy Inquiries:</strong><br>
+                    GreenSpring Backyard Data Privacy Team<br>
+                    123 GreenSpring Lane<br>
+                    Natureville, CA 90210<br>
+                    USA
+                </p>
+                <p class="mb-2">
+                    <strong>Email:</strong> <a href="mailto:privacy@greenspringbackyard.com" class="text-blue-sky hover:underline">privacy@greenspringbackyard.com</a>
+                </p>
+                <p>
+                    <strong>Phone:</strong> +1 (555) 123-4567 (Please mention it's a cookie-related query)
+                </p>
+                <p>
+                    We endeavor to respond to all cookie-related inquiries within a reasonable timeframe.
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (similar to main site for consistency) -->
+    <footer class="bg-natural-wood text-white py-12 px-6 md:px-12 rounded-t-xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">About GreenSpring Backyard</h3>
+                <p class="text-sm leading-relaxed">
+                    GreenSpring Backyard is passionate about creating exceptional outdoor living spaces. We blend innovative design with sustainable practices to deliver beautiful, functional, and eco-conscious environments for every home. Our team is dedicated to bringing your backyard dreams to life.
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">Contact Us</h3>
+                <p class="text-sm mb-2">
+                    <strong>Address:</strong> 123 GreenSpring Lane, Natureville, CA 90210, USA
+                </p>
+                <p class="text-sm mb-2">
+                    <strong>Phone:</strong> +1 (555) 123-4567
+                </p>
+                <p class="text-sm mb-2">
+                    <strong>Email:</strong> <a href="mailto:info@greenspringbackyard.com" class="hover:underline">info@greenspringbackyard.com</a>
+                </p>
+                <p class="text-sm">
+                    <strong>Business Hours:</strong> Mon-Fri: 9:00 AM - 5:00 PM (PST)
+                </p>
+            </div>
+
+            <!-- Quick Links & Social Media -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">Connect With Us</h3>
+                <ul class="text-sm space-y-2 mb-4">
+                    <li><a href="index.html#design-inspirations" class="hover:underline">Design Inspirations</a></li>
+                    <li><a href="index.html#our-services" class="hover:underline">Our Services</a></li>
+                    <li><a href="index.html#shop-essentials" class="hover:underline">Shop Essentials</a></li>
+                    <li><a href="index.html#blog" class="hover:underline">The Backyard Blog</a></li>
+                    <li><a href="privacy.html" class="hover:underline">Privacy Policy</a></li>
+                    <li><a href="terms.html" class="hover:underline">Terms & Conditions</a></li>
+                </ul>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.002 3.797.048.843.04 1.15.138 1.504.232.665.176 1.263.456 1.845.79.996.545 1.896 1.25 2.607 2.066.71.816 1.25 1.76 1.79 2.76.34.605.61 1.28.784 1.979.047.917.058 1.245.058 3.709s-.011 2.792-.058 3.709c-.03.68-.147 1.26-.35 1.813-.203.553-.478 1.053-.875 1.493-.398.44-.866.788-1.38 1.11-.514.32-.99.55-1.51.71-.52.16-1.035.248-1.555.275-.918.047-1.245.058-3.71.058s-2.792-.011-3.71-.058c-.52-.027-1.035-.115-1.555-.275-.514-.32-.982-.55-1.38-1.11-.398-.44-.673-.94-.875-1.493-.203-.553-.32-1.133-.35-1.813-.047-.917-.058-1.245-.058-3.709s.011-2.792.058-3.709c.03-.68.147-1.26.35-1.813.203-.553.478-1.053.875-1.493.398-.44.866-.788 1.38-1.11.514-.32.99-.55 1.51-.71.52-.16 1.035-.248 1.555-.275C9.507 2.011 9.835 2 12.315 2zm0 2.18c-2.15 0-2.423.008-3.27.048-.45.02-1.006.09-1.432.207-.426.117-.79.29-1.11.51-.32.22-.59.48-.82.77-.23.29-.42.61-.55.95-.13.34-.23.707-.27 1.08-.04.84-.04 1.11-.04 3.26s0 2.42.04 3.26c.04.37.14.73.27 1.08.13.34.32.66.55.95.23.29.49.55.82.77.32.22.68.39 1.11.51.426.117.982.187 1.432.207.847.04 1.12.048 3.27.048s2.423-.008 3.27-.048c.45-.02 1.006-.09 1.432-.207.426-.117.79-.29 1.11-.51.32-.22.59-.48.82-.77.23-.29.42-.61.55-.95.13-.34.23-.707.27-1.08.04-.84.04-1.11.04-3.26s0-2.42-.04-3.26c-.04-.37-.14-.73-.27-1.08-.13-.34-.32-.66-.55-.95-.23-.29-.49-.55-.82-.77-.32-.22-.68-.39-1.11-.51-.426-.117-.982-.187-1.432-.207-1.74-.09-2.01-.11-3.26-.11zM12.315 6.84c-2.81 0-5.09 2.28-5.09 5.09s2.28 5.09 5.09 5.09 5.09-2.28 5.09-5.09-2.28-5.09-5.09-5.09zM12.315 8.95c1.63 0 2.95 1.32 2.95 2.95s-1.32 2.95-2.95 2.95-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95zm5.3-.92c-.82 0-1.49.67-1.49 1.49s.67 1.49 1.49 1.49 1.49-.67 1.49-1.49-.67-1.49-1.49-1.49z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.107 4.107 0 001.27 5.477A4.072 4.072 0 012 10.425v.05c0 4.454 3.102 8.133 7.24 8.968a4.09 4.09 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.076c-.681 0-1.34-.034-1.99-.115a11.622 11.622 0 0010.165 3.79z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-green-spring pt-6">
+            &copy; 2025 GreenSpring Backyard. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookie-consent-banner" class="hidden">
+        <p>
+            We use cookies to enhance your experience, analyze site traffic, and personalize content. By clicking "Accept All Cookies," you agree to our use of cookies. You can manage your preferences or learn more in our <a href="cookies.html" class="text-blue-sky hover:underline font-bold">Cookie Policy</a>.
+        </p>
+        <div class="cookie-buttons">
+            <button class="accept-btn" id="accept-cookies">Accept All Cookies</button>
+            <button class="decline-btn" id="decline-cookies">Decline All</button>
+            <button class="manage-btn" id="manage-cookies">Manage Preferences</button>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const cookieBanner = document.getElementById('cookie-consent-banner');
+            const acceptButton = document.getElementById('accept-cookies');
+            const declineButton = document.getElementById('decline-cookies');
+            const manageButton = document.getElementById('manage-cookies');
+
+            // Function to set a cookie
+            function setCookie(name, value, days) {
+                let expires = "";
+                if (days) {
+                    const date = new Date();
+                    date.setTime(date.getTime() + (days * 24 * 60 * 60 * 1000));
+                    expires = "; expires=" + date.toUTCString();
+                }
+                document.cookie = name + "=" + (value || "") + expires + "; path=/";
+            }
+
+            // Function to get a cookie
+            function getCookie(name) {
+                const nameEQ = name + "=";
+                const ca = document.cookie.split(';');
+                for(let i=0; i < ca.length; i++) {
+                    let c = ca[i];
+                    while (c.charAt(0) === ' ') c = c.substring(1, c.length);
+                    if (c.indexOf(nameEQ) === 0) return c.substring(nameEQ.length, c.length);
+                }
+                return null;
+            }
+
+            // Check if cookie consent has been given
+            const consentGiven = getCookie('cookie_consent');
+
+            if (!consentGiven) {
+                cookieBanner.classList.remove('hidden');
+            }
+
+            acceptButton.addEventListener('click', () => {
+                setCookie('cookie_consent', 'accepted', 365); // Store consent for 1 year
+                cookieBanner.classList.add('hidden');
+                // You might want to load analytics scripts here if they depend on consent
+                console.log('Cookies accepted!');
+            });
+
+            declineButton.addEventListener('click', () => {
+                setCookie('cookie_consent', 'declined', 365); // Store decline for 1 year
+                cookieBanner.classList.add('hidden');
+                // Ensure non-essential cookies are not set or are cleared
+                console.log('Cookies declined!');
+            });
+
+            manageButton.addEventListener('click', () => {
+                // Redirect to a dedicated cookie settings page or open a modal for granular control
+                // For this example, we'll just log it. In a real app, this would open a detailed preference center.
+                console.log('Manage preferences clicked. Implement granular control here.');
+                // For now, let's just accept them for demonstration purposes, or you can redirect
+                setCookie('cookie_consent', 'managed', 365);
+                cookieBanner.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>

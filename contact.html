@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GreenSpring Backyard</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF8E1; /* Warm Sand Beige */
+            color: #757575; /* Earth Stone Gray for text */
+        }
+        .text-green-spring {
+            color: #66BB6A; /* Fresh Grass Green */
+        }
+        .bg-green-spring {
+            background-color: #66BB6A; /* Fresh Grass Green */
+        }
+        .text-blue-sky {
+            color: #4FC3F7; /* Spring Sky Blue */
+        }
+        .bg-blue-sky {
+            background-color: #4FC3F7; /* Spring Sky Blue */
+        }
+        .text-earth-stone {
+            color: #757575; /* Earth Stone Gray */
+        }
+        .bg-earth-stone {
+            background-color: #757575; /* Earth Stone Gray */
+        }
+        .bg-warm-sand {
+            background-color: #FFF8E1; /* Warm Sand Beige */
+        }
+        .bg-natural-wood {
+            background-color: #8D6E63; /* Natural Wood Brown */
+        }
+        .border-natural-wood {
+            border-color: #8D6E63; /* Natural Wood Brown */
+        }
+        .btn-primary {
+            @apply bg-green-spring text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300 ease-in-out;
+        }
+        .btn-secondary {
+            @apply bg-transparent border border-green-spring text-green-spring font-semibold py-3 px-6 rounded-lg hover:bg-green-spring hover:text-white transition duration-300 ease-in-out;
+        }
+        .section-heading {
+            @apply text-4xl font-bold text-earth-stone mb-8 text-center;
+        }
+        /* Custom scrollbar for better aesthetics */
+        ::-webkit-scrollbar {
+            width: 12px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #FFF8E1; /* Warm Sand Beige */
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #66BB6A; /* Fresh Grass Green */
+            border-radius: 10px;
+            border: 3px solid #FFF8E1; /* Warm Sand Beige */
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #4CAF50; /* Slightly darker green on hover */
+        }
+        .faq-item {
+            @apply bg-white p-6 rounded-xl shadow-md border border-blue-sky mb-4;
+        }
+        .faq-question {
+            @apply text-xl font-semibold text-blue-sky cursor-pointer flex justify-between items-center;
+        }
+        .faq-answer {
+            @apply mt-3 text-earth-stone hidden;
+        }
+        .faq-answer.active {
+            display: block;
+        }
+    </style>
+</head>
+<body class="antialiased leading-relaxed">
+
+    <!-- Header (similar to main site for consistency) -->
+    <header class="bg-warm-sand shadow-lg py-4 px-6 md:px-12 sticky top-0 z-50 rounded-b-xl">
+        <nav class="container mx-auto flex flex-col md:flex-row justify-between items-center">
+            <div class="flex items-center mb-4 md:mb-0">
+                <a href="index.html" class="text-3xl font-bold text-green-spring flex items-center">
+                    <svg class="w-8 h-8 mr-2" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                    GreenSpring Backyard
+                </a>
+            </div>
+            <ul class="flex flex-wrap justify-center md:justify-end space-x-4 md:space-x-8 text-lg font-medium">
+               <li><a href="index.html">Home</a></li>
+                    <li><a href="privacy.html">Privacy</a></li>
+                    <li><a href="terms.html">Terms</a></li>
+                    <li><a href="cookies.html">Cookies</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="mt-4 md:mt-0 flex space-x-4">
+                <a href="index.html#design-quote" class="btn-primary">Get a Design Quote</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <main id="contact-section" class="py-16 bg-warm-sand">
+        <div class="container mx-auto px-6 md:px-12 max-w-4xl">
+            <h1 class="section-heading">Contact Us</h1>
+            <p class="text-center text-lg mb-12 max-w-3xl mx-auto text-earth-stone">
+                We'd love to hear from you! Whether you have a question about our services, need a design quote, or just want to say hello, feel free to reach out. Our team is dedicated to providing prompt and helpful responses to all inquiries.
+            </p>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white p-8 rounded-xl shadow-lg border border-earth-stone">
+                <!-- Contact Form -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-green-spring mb-6">Send Us a Message</h2>
+                    <p class="text-earth-stone mb-4">
+                        Use the form below to send us a direct message. Please provide as much detail as possible regarding your inquiry so we can assist you efficiently. We aim to respond to all messages within 24-48 business hours.
+                    </p>
+                    <form action="#" method="POST" class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-earth-stone">Your Name <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-spring focus:border-green-spring sm:text-sm" placeholder="John Doe" required>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-earth-stone">Your Email <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-spring focus:border-green-spring sm:text-sm" placeholder="john.doe@example.com" required>
+                        </div>
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-earth-stone">Phone Number (Optional)</label>
+                            <input type="tel" id="phone" name="phone" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-spring focus:border-green-spring sm:text-sm" placeholder="(123) 456-7890">
+                        </div>
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-earth-stone">Subject <span class="text-red-500">*</span></label>
+                            <input type="text" id="subject" name="subject" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-spring focus:border-green-spring sm:text-sm" placeholder="Inquiry about design services or product support" required>
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-earth-stone">Your Message <span class="text-red-500">*</span></label>
+                            <textarea id="message" name="message" rows="7" class="mt-1 block w-full px-4 py-2 border border-gray-300 rounded-md shadow-sm focus:ring-green-spring focus:border-green-spring sm:text-sm" placeholder="Tell us about your backyard dreams, specific questions about a product, or any support you need."></textarea>
+                        </div>
+                        <button type="submit" class="btn-primary w-full">Send Message</button>
+                    </form>
+                </div>
+
+                <!-- Contact Details and Map -->
+                <div>
+                    <h2 class="text-2xl font-semibold text-green-spring mb-6">Our Details & Location</h2>
+                    <p class="text-earth-stone mb-4">
+                        You can also reach us directly via phone or email during our business hours. For in-person consultations, please schedule an appointment in advance.
+                    </p>
+                    <div class="space-y-4 text-earth-stone">
+                        <p class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-green-spring" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path></svg>
+                            <strong>Our Studio Address:</strong><br>
+                            123 GreenSpring Lane<br>
+                            Natureville, CA 90210<br>
+                            USA
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-green-spring" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 1.48a1 1 0 01-.542 1.31L5.81 7.707a1 1 0 00-.232.758c.083.67.29 1.334.643 1.957.34.604.78 1.164 1.306 1.69.52.526 1.08.967 1.684 1.306.623.353 1.287.56 1.957.643a1 1 0 00.758-.232l1.45-1.45a1 1 0 011.31-.542l1.48.74A1 1 0 0119 18v2a1 1 0 01-1 1h-2C7.163 21 3 16.837 3 11V9a1 1 0 011-1h2.153z"></path></svg>
+                            <strong>Phone:</strong> <a href="tel:+15551234567" class="text-blue-sky hover:underline">+1 (555) 123-4567</a>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-green-spring" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                            <strong>Email:</strong> <a href="mailto:info@greenspringbackyard.com" class="text-blue-sky hover:underline">info@greenspringbackyard.com</a>
+                        </p>
+                        <p class="flex items-center">
+                            <svg class="w-6 h-6 mr-3 text-green-spring" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l3 3a1 1 0 001.414-1.414L11 9.586V6z" clip-rule="evenodd"></path></svg>
+                            <strong>Business Hours:</strong><br>
+                            Monday - Friday: 9:00 AM - 5:00 PM (Pacific Standard Time)<br>
+                            Saturday - Sunday: Closed
+                        </p>
+                    </div>
+                    <div class="mt-8">
+                        <h3 class="text-xl font-semibold text-earth-stone mb-3">Visit Our Studio</h3>
+                        <p class="text-earth-stone mb-4">
+                            Our studio is located in the heart of Natureville. We encourage you to visit us to discuss your project in person. Please schedule an appointment in advance to ensure a designer is available to meet with you.
+                        </p>
+                        <!-- Embedded Map -->
+                        <div class="w-full h-64 bg-gray-200 rounded-md overflow-hidden shadow-md">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.298950893072!2d-122.41941578468165!3d37.77492957975984!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808b8e0a3f6f%3A0x1c8b9d0e2e0a2d!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1678888888888!5m2!1sen!2sin"
+                                width="100%"
+                                height="100%"
+                                style="border:0;"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Frequently Asked Questions Section -->
+            <div class="mt-16">
+                <h2 class="section-heading">Frequently Asked Questions (FAQ)</h2>
+                <p class="text-center text-lg mb-8 max-w-3xl mx-auto text-earth-stone">
+                    Find quick answers to common questions about our services, design process, and products.
+                </p>
+
+                <div class="space-y-4">
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What types of backyard projects do you specialize in?
+                            <span class="text-green-spring text-2xl">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            GreenSpring Backyard specializes in a wide range of outdoor living projects, including urban small space makeovers, family-friendly backyard zones, serene garden nooks, and elaborate entertaining spaces with outdoor kitchens and lounges. We cater to projects of all sizes, focusing on blending natural aesthetics with smart, sustainable design.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How long does a typical backyard design project take?
+                            <span class="text-green-spring text-2xl">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            The duration of a project varies significantly based on its complexity, size, and the specific services required. A full design consultation might take a few weeks to finalize, while a complete backyard transformation including construction could range from several weeks to a few months. We provide a detailed timeline during the initial consultation.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Do you offer eco-friendly and sustainable design options?
+                            <span class="text-green-spring text-2xl">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Absolutely! Sustainability is at the core of GreenSpring Backyard's philosophy. We prioritize eco-friendly landscaping solutions, native plant selections, drought-tolerant gardens, smart water-saving features, and the use of sustainable materials for all our installations. We're committed to creating beautiful spaces that are also kind to the planet.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            Can I purchase products from your website without a design service?
+                            <span class="text-green-spring text-2xl">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Yes, you can! Our "Shop GreenSpring Essentials" section offers a curated selection of eco-planters, outdoor seating, fire pits, lighting, and sustainable backyard accessories. These products are available for direct purchase, allowing you to enhance your outdoor space even if you're not opting for our full design services.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            What is included in a full backyard design consultation?
+                            <span class="text-green-spring text-2xl">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            Our full backyard design consultation includes an in-depth discussion of your vision, lifestyle, and budget, a comprehensive site analysis, conceptual sketches, 3D renderings, and a detailed master plan. We cover everything from plant selection and hardscaping to lighting and outdoor structures, ensuring a cohesive and personalized design.
+                        </div>
+                    </div>
+
+                    <div class="faq-item">
+                        <div class="faq-question">
+                            How do I schedule a virtual consultation?
+                            <span class="text-green-spring text-2xl">+</span>
+                        </div>
+                        <div class="faq-answer">
+                            You can easily schedule a virtual consultation through our "Interactive Tools & Features" section on the homepage, or by using the contact form on this page. Simply fill out the form with your preferred time and details, and our team will get in touch to confirm your appointment.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (similar to main site for consistency) -->
+    <footer class="bg-natural-wood text-white py-12 px-6 md:px-12 rounded-t-xl">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- About Us -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">About GreenSpring Backyard</h3>
+                <p class="text-sm leading-relaxed">
+                    GreenSpring Backyard is passionate about creating exceptional outdoor living spaces. We blend innovative design with sustainable practices to deliver beautiful, functional, and eco-conscious environments for every home. Our team is dedicated to bringing your backyard dreams to life.
+                </p>
+            </div>
+
+            <!-- Contact Information -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">Contact Us</h3>
+                <p class="text-sm mb-2">
+                    <strong>Address:</strong> 123 GreenSpring Lane, Natureville, CA 90210, USA
+                </p>
+                <p class="text-sm mb-2">
+                    <strong>Phone:</strong> +1 (555) 123-4567
+                </p>
+                <p class="text-sm mb-2">
+                    <strong>Email:</strong> <a href="mailto:info@greenspringbackyard.com" class="hover:underline">info@greenspringbackyard.com</a>
+                </p>
+                <p class="text-sm">
+                    <strong>Business Hours:</strong> Mon-Fri: 9:00 AM - 5:00 PM (PST)
+                </p>
+            </div>
+
+            <!-- Quick Links & Social Media -->
+            <div>
+                <h3 class="text-2xl font-semibold mb-4 text-green-spring">Connect With Us</h3>
+                <ul class="text-sm space-y-2 mb-4">
+                    <li><a href="index.html#design-inspirations" class="hover:underline">Design Inspirations</a></li>
+                    <li><a href="index.html#our-services" class="hover:underline">Our Services</a></li>
+                    <li><a href="index.html#shop-essentials" class="hover:underline">Shop Essentials</a></li>
+                    <li><a href="index.html#blog" class="hover:underline">The Backyard Blog</a></li>
+                </ul>
+                <div class="flex space-x-4">
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path fill-rule="evenodd" d="M12.315 2c2.43 0 2.784.002 3.797.048.843.04 1.15.138 1.504.232.665.176 1.263.456 1.845.79.996.545 1.896 1.25 2.607 2.066.71.816 1.25 1.76 1.79 2.76.34.605.61 1.28.784 1.979.047.917.058 1.245.058 3.709s-.011 2.792-.058 3.709c-.03.68-.147 1.26-.35 1.813-.203.553-.478 1.053-.875 1.493-.398.44-.866.788-1.38 1.11-.514.32-.99.55-1.51.71-.52.16-1.035.248-1.555.275-.918.047-1.245.058-3.71.058s-2.792-.011-3.71-.058c-.52-.027-1.035-.115-1.555-.275-.514-.32-.982-.55-1.38-1.11-.398-.44-.673-.94-.875-1.493-.203-.553-.32-1.133-.35-1.813-.047-.917-.058-1.245-.058-3.709s.011-2.792.058-3.709c.03-.68.147-1.26.35-1.813.203-.553.478-1.053.875-1.493.398-.44.866-.788 1.38-1.11.514-.32.99-.55 1.51-.71.52-.16 1.035-.248 1.555-.275C9.507 2.011 9.835 2 12.315 2zm0 2.18c-2.15 0-2.423.008-3.27.048-.45.02-1.006.09-1.432.207-.426.117-.79.29-1.11.51-.32.22-.59.48-.82.77-.23.29-.42.61-.55.95-.13.34-.23.707-.27 1.08-.04.84-.04 1.11-.04 3.26s0 2.42.04 3.26c.04.37.14.73.27 1.08.13.34.32.66.55.95.23.29.49.55.82.77.32.22.68.39 1.11.51.426.117.982.187 1.432.207.847.04 1.12.048 3.27.048s2.423-.008 3.27-.048c.45-.02 1.006-.09 1.432-.207.426-.117.79-.29 1.11-.51.32-.22.59-.48.82-.77.23-.29.42-.61.55-.95.13-.34.23-.707.27-1.08.04-.84.04-1.11.04-3.26s0-2.42-.04-3.26c-.04-.37-.14-.73-.27-1.08-.13-.34-.32-.66-.55-.95-.23-.29-.49-.55-.82-.77-.32-.22-.68-.39-1.11-.51-.426-.117-.982-.187-1.432-.207-1.74-.09-2.01-.11-3.26-.11zM12.315 6.84c-2.81 0-5.09 2.28-5.09 5.09s2.28 5.09 5.09 5.09 5.09-2.28 5.09-5.09-2.28-5.09-5.09-5.09zM12.315 8.95c1.63 0 2.95 1.32 2.95 2.95s-1.32 2.95-2.95 2.95-2.95-1.32-2.95-2.95 1.32-2.95 2.95-2.95zm5.3-.92c-.82 0-1.49.67-1.49 1.49s.67 1.49 1.49 1.49 1.49-.67 1.49-1.49-.67-1.49-1.49-1.49z" clip-rule="evenodd" />
+                        </svg>
+                    </a>
+                    <a href="#" class="text-white hover:text-green-spring transition-colors duration-200">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                            <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.107 4.107 0 001.27 5.477A4.072 4.072 0 012 10.425v.05c0 4.454 3.102 8.133 7.24 8.968a4.09 4.09 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.076c-.681 0-1.34-.034-1.99-.115a11.622 11.622 0 0010.165 3.79z" />
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="text-center text-sm mt-8 border-t border-green-spring pt-6">
+            &copy; 2025 GreenSpring Backyard. All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', () => {
+                    const answer = question.nextElementSibling;
+                    const icon = question.querySelector('span');
+
+                    // Toggle active class on the answer
+                    answer.classList.toggle('active');
+
+                    // Change icon based on active state
+                    if (answer.classList.contains('active')) {
+                        icon.textContent = '-';
+                    } else {
+                        icon.textContent = '+';
+                    }
+
+                    // Close other open FAQ items
+                    faqQuestions.forEach(otherQuestion => {
+                        if (otherQuestion !== question) {
+                            const otherAnswer = otherQuestion.nextElementSibling;
+                            const otherIcon = otherQuestion.querySelector('span');
+                            if (otherAnswer.classList.contains('active')) {
+                                otherAnswer.classList.remove('active');
+                                otherIcon.textContent = '+';
+                            }
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>
